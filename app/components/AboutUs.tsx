@@ -114,12 +114,12 @@ export default function AboutUs() {
               </div>
 
               {/* Contact button */}
-              <Link 
+              {/* <Link 
                 href="/contact" 
                 className="bg-accent text-primary py-5 px-10 rounded-full font-inter font-bold text-size-base hover:opacity-90 transition-opacity"
               >
                 Get in touch
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
