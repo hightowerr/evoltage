@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Icons } from "../components/icons";
+import { Icons } from "./Icons";
 
 export default function Footer() {
   return (

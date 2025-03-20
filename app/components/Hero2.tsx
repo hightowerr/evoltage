@@ -1,5 +1,6 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 interface Testimonial {
   quote: string;
@@ -37,7 +38,7 @@ interface Hero151Props {
 
 const Hero151 = ({
   top_heading = "Friendly and professional team of electricians",
-  heading = "Electrical Services",
+  heading = "Welcome to eVoltage",
   description = "We cover all types of electrical work from domestic, Industrial to commercial settings.",
   button = {
     text: "Get in touch",
@@ -79,10 +80,13 @@ const Hero151 = ({
                 {description}
               </p>
             </div>
-            <div className="my-4 lg:my-6">
-              <Button asChild size="lg" className="text-size-base bg-accent text-primary rounded-full py-5 px-8 hover:opacity-90 transition-colors font-normal">
-                <a href={button.url}>{button.text}</a>
-              </Button>
+            <div className="py-8 my-4 lg:my-6">
+              <Link 
+                href="/contact"
+                className="bg-accent text-primary py-5 px-10 rounded-full font-inter font-bold text-size-base hover:opacity-90 transition-opacity"
+              >
+                Get in touch
+              </Link>
             </div>
             {/* <div className="flex flex-wrap items-center gap-3"> */}
               {/* <div className="relative flex -space-x-[1.5rem]">
@@ -124,7 +128,7 @@ const Hero151 = ({
                         <img
                           src={images.second}
                           alt=""
-                          className="size-full object-cover object-center scale-[0.9] translate-y-5"
+                          className="size-full object-cover object-center scale-[1] translate-y-5"
                         />
                       </AspectRatio>
                     </div>
@@ -135,7 +139,7 @@ const Hero151 = ({
                         <img
                           src={images.third}
                           alt=""
-                          className="size-full object-cover object-center"
+                          className="size-full object-cover object-contain scale-[1] translate-x-1 translate-y--52"
                         />
                       </AspectRatio>
                     </div>

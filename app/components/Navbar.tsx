@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Icons } from "../components/icons"
+import { Icons } from "./Icons"
 import { useRouter } from 'next/router';
 
 export default function Navbar() {
@@ -15,6 +15,9 @@ export default function Navbar() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setMobileMenuOpen(false); // Close mobile menu after clicking
+    } else {
+      // If we're not on the homepage, navigate to it first
+      window.location.href = `/#${sectionId}`;
     }
   };
 
@@ -89,21 +92,21 @@ export default function Navbar() {
                 Home
               </Link>
               <Link 
-                href="#about" 
+                href="/#about" 
                 onClick={(e) => scrollToSection(e, 'about')}
                 className="text-text font-inter font-normal text-size-1xl tracking-wide transition-colors"
               >
                 About Us
               </Link>
               <Link 
-                href="#services"
+                href="/#services"
                 onClick={(e) => scrollToSection(e, 'services')}
                 className="text-text hover:text-text font-inter font-normal text-size-1xl tracking-wide transition-colors"
               >
                 Services
               </Link>
               <Link 
-                href="#why-us"
+                href="/#why-us"
                 onClick={(e) => scrollToSection(e, 'why-us')}
                 className="text-text hover:text-text font-inter font-normal text-size-1xl tracking-wide transition-colors"
               >
@@ -140,21 +143,21 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
-              href="#about"
+              href="/#about"
               onClick={(e) => scrollToSection(e, 'about')}
               className="text-text hover:text-text font-inter font-normal text-size-base tracking-wide py-2 transition-colors"
             >
               About Us
             </Link>
             <Link 
-              href="#services"
+              href="/#services"
               onClick={(e) => scrollToSection(e, 'services')}
               className="text-text hover:text-text font-inter font-normal text-size-base tracking-wide py-2 transition-colors"
             >
               Services
             </Link>
             <Link 
-              href="#why-us"
+              href="/#why-us"
               onClick={(e) => scrollToSection(e, 'why-us')}
               className="text-text hover:text-text font-inter font-normal text-size-base tracking-wide py-2 transition-colors"
             >
