@@ -1,60 +1,23 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-
-interface Testimonial {
-  quote: string;
-  author: string;
-  role: string;
-  company: string;
-  avatars: Array<{
-    image: string;
-    fallback: string;
-  }>;
-}
+import Image from 'next/image';
 
 interface Hero151Props {
   top_heading?: string;
   heading?: string;
   description?: string;
-  button?: {
-    text: string;
-    url: string;
-  };
   images?: {
     first: string;
     second: string;
     third: string;
     fourth: string;
   };
-//   testimonial?: Testimonial;
-//   images: {
-//     first: string;
-//     second: string;
-//     third: string;
-//     fourth: string;
-//   };
 }
 
 const Hero151 = ({
   top_heading = "Friendly and professional team of electricians",
   heading = "Welcome to eVoltage",
   description = "We cover all types of electrical work from domestic, Industrial to commercial settings.",
-  button = {
-    text: "Get in touch",
-    url: "#",
-  },
-//   testimonial = {
-//     quote: "Focused strategy, swift delivery",
-//     author: "John Doe",
-//     role: "CEO",
-//     company: "Company",
-//     avatars: [
-//       { image: "https://shadcnblocks.com/images/block/avatar-1.webp", fallback: "AB" },
-//       { image: "https://shadcnblocks.com/images/block/avatar-2.webp", fallback: "CD" },
-//       { image: "https://shadcnblocks.com/images/block/avatar-3.webp", fallback: "EF" },
-//     ],
-//   },
   images = {
     first: "/images/home_img.jpg",
     second: "/images/Barbers.jpg",
@@ -116,18 +79,22 @@ const Hero151 = ({
               <AspectRatio ratio={1 / 1} className="h-full w-full">
                 <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-[3.5%]">
                   <div className="overflow-hidden rounded-[5.2%] border border-muted bg-muted">
-                    <img
+                    <Image 
                       src={images.first}
-                      alt=""
-                      className="object-fit h-full w-full object-center"
+                      alt="First image"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="relative overflow-hidden rounded-[5.2%] border border-muted bg-muted">
                     <div className="absolute top-1/2 left-[5%] w-[110%] max-w-[25rem] -translate-y-1/2 overflow-hidden rounded-md">
                       <AspectRatio ratio={1 / 1} className="h-full w-full">
-                        <img
+                        <Image 
                           src={images.second}
-                          alt=""
+                          alt="Second image"
+                          width={400}
+                          height={300}
                           className="size-full object-cover object-center scale-[1] translate-y-5"
                         />
                       </AspectRatio>
@@ -136,9 +103,11 @@ const Hero151 = ({
                   <div className="relative overflow-hidden rounded-[5.2%] border border-muted bg-muted">
                     <div className="absolute top-[9%] left-[9%] w-[200%] max-w-[37.5rem] overflow-hidden rounded-md">
                       <AspectRatio ratio={1.6 / 1}>
-                        <img
+                        <Image 
                           src={images.third}
-                          alt=""
+                          alt="Third image"
+                          width={400}
+                          height={300}
                           className="size-full object-cover object-contain scale-[1] translate-x-1 translate-y--52"
                         />
                       </AspectRatio>
@@ -147,9 +116,11 @@ const Hero151 = ({
                   <div className="relative overflow-hidden rounded-[5.2%] border border-muted bg-muted">
                     <div className="relative top-[12%] left-[50%] w-[80%] max-w-[1`0.5rem] overflow-hidden rounded-md -translate-x-[50%]">
                     <AspectRatio ratio={0.8/ 1}>
-                        <img
+                        <Image 
                           src={images.fourth}
-                          alt=""
+                          alt="Fourth image"
+                          width={400}
+                          height={300}
                           className="size-full object-cover object-center absolute z-10 w-full"
                         />
                       </AspectRatio>

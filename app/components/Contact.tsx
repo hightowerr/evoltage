@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, FormEvent, ChangeEvent } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Icons } from './Icons';
-import { Phone } from 'lucide-react';
+
 interface FormData {
   name: string;
   email: string;
@@ -46,7 +45,7 @@ export default function Contact() {
             Get in touch with our team
           </h1>
           <p className="text-[#444E55] text-size-xl leading-relaxed">
-            Have a question or need assistance? We're here to help. Reach out to us and we'll get back to you as soon as possible.
+            Have a question or need assistance? We&apos;re here to help. Reach out to us and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
 
@@ -164,7 +163,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-[#151515] font-semibold text-size-xl mb-2">Email us</h3>
                     <p className="text-[#444E55] text-size-base">info@evoltageuk.co.uk</p>
-                    <p className="text-[#444E55] text-size-base">We'll respond within 48 hours</p>
+                    <p className="text-[#444E55] text-size-base">We&apos;ll respond within 48 hours</p>
                   </div>
                 </div>
 
