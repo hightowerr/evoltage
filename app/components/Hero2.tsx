@@ -16,8 +16,8 @@ interface Hero151Props {
 
 const Hero151 = ({
   top_heading = "Friendly and professional team of electricians",
-  heading = "Welcome to eVoltage",
-  description = "We cover all types of electrical work from domestic, Industrial to commercial settings.",
+  heading = "Evoltage UK",
+  description = "We are a friendly and professional team of electricians. We cover all types of electrical work from domestic, Industrial to commercial settings.",
   images = {
     first: "/images/home_img.jpg",
     second: "/images/Barbers.jpg",

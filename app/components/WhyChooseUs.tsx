@@ -61,10 +61,10 @@ export default function WhyChooseUs() {
         {/* Content Row */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Image Column */}
-          <div className="lg:col-span-4 order-2 lg:order-1">
+          <div className="hidden lg:block lg:col-span-4 order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden aspect-[3/4]">
               <Image 
-                src="/images/electrician-technician.png" 
+                src="/images/Group_image_inspyrenet.png" 
                 alt="Professional Electrician" 
                 width={400}
                 height={600}
