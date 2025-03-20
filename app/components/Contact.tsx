@@ -142,11 +142,7 @@ export default function Contact() {
                 {/* Phone */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#1053D4]/10">
-                  <span className="text-2xl">📞</span>
-                  {/* <Phone 
-                    size={24}
-                    className="text-black"
-                  />     */}
+                  <Icons.phone className="w-6 h-6 text-[#1053D4]" />
                   </div>
                   <div>
                     <h3 className="text-[#151515] font-semibold text-size-xl mb-2">Call us</h3>
