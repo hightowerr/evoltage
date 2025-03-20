@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { Icons } from "./Icons";
 
@@ -66,31 +65,21 @@ export default function Footer() {
               <h3 className="text-white font-heading font-bold text-size-2xl">Contact</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Image 
-                    src="/images/call-icon.svg" 
-                    alt="Phone" 
-                    width={20} 
-                    height={20}
-                    className="mt-1"
-                  />
+                  <Icons.phone className="w-5 h-5 mt-1 text-white" />
                   <div>
                     <p className="text-white font-body font-semibold text-size-base">Call us</p>
                     <p className="text-[#BBBDC3] font-body text-size-base">07970 694 321</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 flex items-center justify-center mt-1">
-                    <span className="text-lg">📍</span>
-                  </div>
+                  <Icons.mapPin className="w-5 h-5 mt-1 text-white" />
                   <div>
                     <p className="text-white font-body font-semibold text-size-base">Address</p>
                     <p className="text-[#BBBDC3] font-body text-size-base">Loughborough, Leicestershire</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 flex items-center justify-center mt-1">
-                    <span className="text-lg">📧</span>
-                  </div>
+                  <Icons.mail className="w-5 h-5 mt-1 text-white" />
                   <div>
                     <p className="text-white font-body font-semibold text-size-base">Email</p>
                     <p className="text-[#BBBDC3] font-body text-size-base">info@evoltageuk.co.uk</p>
