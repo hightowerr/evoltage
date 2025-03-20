@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Phone } from 'lucide-react';
 
 const CONTENT = {
   topHeading: "About Us",
@@ -14,9 +14,9 @@ const CONTENT = {
 
 export default function AboutUs() {
   return (
-    <section id="about" className="w-full bg-[#FEFDFB] pt-8 pb-8 md:pt-8 md:pb-8">
-      <div className="container mx-auto px-6 md:px-2 lg:px-2">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <section id="about" className="w-full bg-background-primary pt-8 pb-8 md:pt-8 md:pb-8">
+      <div className="container mx-auto px-8 md:px-12 lg:px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left column: Image */}
           <div className="lg:col-span-5 relative">
             <div className="bg-[#1053D4] rounded-2xl overflow-hidden relative aspect-[526/943]">
@@ -45,17 +45,17 @@ export default function AboutUs() {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-6">
               {/* Section title */}
-              <h3 className="uppercase text-[#0A0264] font-body font-bold text-size-base tracking-widest">
+              <h3 className="uppercase text-[#4D4D4D] font-body font-bold text-size-base tracking-widest">
                 {CONTENT.topHeading}
               </h3>
               
               {/* Main heading */}
-              <h2 className="text-[#0B0D0E] font-semibold text-size-4xl md:text-size-5xl leading-tight">
+              <h2 className="md:text-size-3xl text-3xl leading-tight font-semibold text-primary lg:text-3xl xl:text-5xl">
                 {CONTENT.mainHeading}
               </h2>
               
               {/* Description */}
-              <p className="text-text-secondary text-muted-foreground font-body font-normal text-size-xl leading-relaxed">
+              <p className="text-one text-lg text-muted-foreground font-body font-normal text-size-2xl leading-relaxed">
                 {CONTENT.description}
               </p>
             </div>
@@ -64,35 +64,35 @@ export default function AboutUs() {
             <div className="space-y-6">
               {/* Feature 1 */}
               <div className="flex items-start gap-4">
-                <div className="relative flex-shrink-0 w-6 h-6">
-                  <div className="absolute inset-0 bg-primary rounded-full"></div>
+                <div className="relative flex-shrink-0 w-10 h-10">
+                  <div className="absolute inset-0 bg-accent rounded-full"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <CheckCircle 
-                      size={16}
-                      className="stroke-white" 
+                      size={24}
+                      className="stroke-black" 
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="text-black font-body font-semibold text-size-2xl">Authorized Experts</h4>
-                  <p className="text-text-dark text-muted-foreground font-body font-normal text-size-xl">Turpis lacus mi arcu mauris lorem non risus. Vel sodales.</p>
+                  <h4 className="text-black font-body font-semibold text-size-3xl">Authorized Experts</h4>
+                  <p className="text-one text-muted-foreground font-body font-normal text-size-2xl leading-relaxed">Turpis lacus mi arcu mauris lorem non risus. Vel sodales.</p>
                 </div>
               </div>
 
               {/* Feature 2 */}
               <div className="flex items-start gap-4">
-                <div className="relative flex-shrink-0 w-6 h-6">
-                  <div className="absolute inset-0 bg-primary rounded-full"></div>
+                <div className="relative flex-shrink-0 w-10 h-10">
+                  <div className="absolute inset-0 bg-accent rounded-full"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                  <CheckCircle 
-                      size={16}
-                      className="stroke-white"
+                    <CheckCircle 
+                      size={24}
+                      className="stroke-black"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="text-black font-body font-semibold text-size-2xl">Member of NAPIT</h4>
-                  <p className="text-text-dark text-muted-foreground font-body font-normal text-size-xl">Turpis lacus mi arcu mauris lorem non risus. Vel sodales.</p>
+                  <h4 className="text-black font-body font-semibold text-size-3xl">Member of NAPIT</h4>
+                  <p className="text-one text-lg text-muted-foreground font-body font-normal text-size-2xl leading-relaxed">Turpis lacus mi arcu mauris lorem non risus. Vel sodales.</p>
                 </div>
               </div>
             </div>
@@ -101,18 +101,22 @@ export default function AboutUs() {
             <div className="flex flex-wrap justify-between items-center gap-6 pt-6">
               {/* Call us */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center border border-[#C9A91D]">
+                <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                  <Phone 
+                    size={24}
+                    className="text-black"
+                  />
                 </div>
                 <div>
-                  <h4 className="text-black font-body font-semibold text-size-xl">Call us</h4>
-                  <p className="text-text-dark font-body font-normal text-size-base">07970 694 321</p>
+                  <h4 className="text-black font-body font-semibold text-size-3xl">Call us</h4>
+                  <p className="text-one font-body font-normal text-size-2xl">07970 694 321</p>
                 </div>
               </div>
 
               {/* Contact button */}
               <Link 
                 href="/contact" 
-                className="bg-[#C9A91D] hover:bg-[#B09018] transition-colors text-[#19170B] font-body font-bold py-5 px-8 rounded-full text-size-base"
+                className="bg-accent hover:opacity-90 transition-colors text-primary font-body font-normal py-5 px-8 rounded-full text-size-base"
               >
                 Contact us
               </Link>

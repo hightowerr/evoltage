@@ -1,5 +1,4 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 interface Testimonial {
@@ -41,7 +40,7 @@ const Hero151 = ({
   heading = "Electrical Services",
   description = "We cover all types of electrical work from domestic, Industrial to commercial settings.",
   button = {
-    text: "Get Started",
+    text: "Get in touch",
     url: "#",
   },
 //   testimonial = {
@@ -58,30 +57,30 @@ const Hero151 = ({
   images = {
     first: "/images/home_img.jpg",
     second: "/images/Barbers.jpg",
-    third: "/images/Barbers.jpg",
-    fourth: "/images/services.jpg",
+    third: "/images/Evoltage_Kitchen.jpg",
+    fourth: "/images/Outdoors_work.jpg",
   },
 }: Hero151Props) => {
   return (
-    <section className="w-full bg-[#FEFDFB] pt-8  pb-8 md:pt-8 md:pb-8">
+    <section className="w-full bg-background-primary pt-16  pb-16 md:pt-8 md:pb-8">
     {/* <section className="flex items-center justify-center min-h-[80vh] pt-2 pb-4 md:pt-4 md:pb-8"> */}
       <div className="container mx-auto px-4">
       {/* <div className="container mx-auto px-4"> */}
         <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
         <div className="flex-1 space-y-4">
           <div className="space-y-4">
-            <h3 className="uppercase text-[#0B378D] font-body font-bold text-size-base tracking-widest">
+            <h3 className="uppercase text-[#4D4D4D] font-body font-bold text-size-base tracking-widest">
               {top_heading}
             </h3>
-            <h1 className="max-w-[80%] text-4xl leading-tight font-semibold text-foreground lg:text-5xl xl:text-7xl">
+            <h1 className="max-w-[80%] text-3xl leading-tight font-semibold text-primary lg:text-5xl xl:text-7xl">
               {heading}
             </h1>
-              <p className="text-text-dark text-lg leading-relaxed text-muted-foreground xl:text-2xl">
+              <p className="text-one text-lg leading-relaxed text-muted-foreground xl:text-2xl">
                 {description}
               </p>
             </div>
             <div className="my-4 lg:my-6">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="text-size-base bg-accent text-primary rounded-full py-5 px-8 hover:opacity-90 transition-colors font-normal">
                 <a href={button.url}>{button.text}</a>
               </Button>
             </div>

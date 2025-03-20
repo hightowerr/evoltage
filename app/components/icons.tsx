@@ -29,4 +29,17 @@ export const Icons = {
       />
     </svg>
   ),
+  zap: (props: IconProps) => (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M13 3v7h6l-8 11v-7H5l8-11z"
+      />
+    </svg>
+  ),
 } 

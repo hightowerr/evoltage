@@ -5,11 +5,36 @@
 @tailwind utilities;
 
 :root {
-  --primary: #1053D4;
+  --hue: -5;
+  --tertiary-hue: calc(var(--hue) + 300);
+  --accent-hue: calc(var(--hue) + 60);
+  /* --primary: #ffe66b; */
+  --primary: hsl(var(--hue), 0%, 0%); /* Light beige */
+  --secondary: hsl(var(--hue), 0%, 30%); 
+  --tertiary: hsl(var(--tertiary-hue), 74%, 55%); /* Bright blue */
+  --accent: hsl(var(--accent-hue), 74%, 55%); /* Off-white */
+  --background-primary: hsl(var(--hue), 62%, 96%); /* Very light beige */
+  --one: hsl(42, 0%, 30%); /* Nearly black with slight beige tint */
+  --text-two: hsl(0, 0%, 100%); /* Muted text color */
+  --background-light: hsl(var(--hue), 62%, 96%); /* Light background */
+  /* --flag: #CAEE5A;
+
+  --secondary: #151515;
+  --tertiary: #19170B;
   --accent: #CAEE5A;
+ 
   --text-secondary: #BBBDC3;
-  --text-dark: #151515;
+
+  --background-secondary: #19170B;
   --background-light: #F2F4F8;
+  --background-card: #19170B;  */
+  /* .dark{
+    --primary-color: hsl(--hue, 74%, 55%);
+    --secondary-color: hsl(55, 74%, 55%);
+    --tertiary-color: hsl(var(--tertiary-hue), 74%, 55%);
+    --accent-color: hsl(var(--accent-hue), 74%, 55%);
+  } */ 
+
 
   /* Custom font sizes */
   --font-size-sm: 0.600rem;

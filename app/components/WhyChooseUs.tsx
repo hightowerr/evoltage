@@ -12,18 +12,18 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="w-full py-20 bg-[rgba(155,187,208,0.2)] pt-8 pb-8 md:pt-8 md:pb-8" id="why-us">
+    <section className="w-full pt-8 pb-8 md:pt-8 md:pb-8 bg-[#B7B4A1] bg-opacity-50" id="why-us">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Title and Stats Row */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
           {/* Title Area */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-6">
-              <h3 className="uppercase text-[#19170B] font-body font-bold text-size-base tracking-widest">
+              <h3 className="uppercase text-[#151515] font-body font-bold text-size-base tracking-widest">
                 What We Do
               </h3>
               
-              <h2 className="text-[#19170B] font-heading font-bold text-size-4xl md:text-size-5xl leading-tight">
+              <h2 className="text-[#151515] font-heading font-semibold text-size-4xl md:text-size-5xl leading-tight">
                 Trusted Service on range from
               </h2>
             </div>
@@ -33,24 +33,24 @@ export default function WhyChooseUs() {
           <div className="lg:col-span-6 flex justify-end">
             <div className="flex items-center">
               {/* First Stat */}
-              <div className="flex flex-col gap-3">
-                <p className="text-[#4839FB] font-heading font-bold text-size-5xl leading-tight">
+              <div className="flex flex-col gap-1">
+                <p className="text-primary font-heading font-bold text-size-3xl leading-tight">
                   10 +
                 </p>
-                <p className="text-[#4839FB] font-body font-normal text-size-base">
+                <p className="text-primary font-body font-normal text-size-1xl leading-relaxed">
                   Years Experience
                 </p>
               </div>
               
               {/* Divider */}
-              <div className="h-16 w-px bg-[#4839FB] mx-8"></div>
+              <div className="h-16 w-px bg-primary mx-4"></div>
               
               {/* Second Stat */}
-              <div className="flex flex-col gap-3">
-                <p className="text-[#4839FB] font-heading font-bold text-size-5xl leading-tight">
+              <div className="flex flex-col gap-1">
+                <p className="text-primary font-heading font-bold text-size-3xl leading-tight">
                   100 +
                 </p>
-                <p className="text-[#4839FB] font-body font-normal text-size-base">
+                <p className="text-primary font-body font-normal text-size-1xl leading-relaxed">
                   Satisfied Clients
                 </p>
               </div>
@@ -82,7 +82,7 @@ export default function WhyChooseUs() {
                   <div className="mb-2">
                     <div className="w-12 h-12 flex items-center justify-center">
                       <Image 
-                        src="/images/service-icon.svg" 
+                        src="/images/check-svgrepo-com.svg" 
                         alt={service.title} 
                         width={24} 
                         height={24}
@@ -96,7 +96,7 @@ export default function WhyChooseUs() {
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-[#19170B] font-body font-normal text-size-base">
+                  <p className="text-[#19170B] font-body font-normal text-size-1xl leading-relaxed">
                     {service.description}
                   </p>
                 </div>
